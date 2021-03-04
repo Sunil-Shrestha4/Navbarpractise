@@ -4,8 +4,12 @@ import {
   NavLink,
   NavMenu,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
+  ServiceLink,
 } from './NavbarElements';
+import './style.css';
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
+import Services from './Services';
 
 const Navbar = () => {
     
@@ -16,7 +20,7 @@ const Navbar = () => {
     }
   return (
     <>
-    
+    <Router>
       <Nav>
         <NavLink to='/'>
           <h1>logo</h1>
@@ -26,8 +30,19 @@ const Navbar = () => {
           <NavLink to='/about'>
             About
           </NavLink>
-          <NavLink to='/services' >
+          <NavLink className="service" to='/services'>
             Services
+            <ul className="programminglanguage">
+            <li ><NavLink to='/python'>Python</NavLink></li>
+            <li ><NavLink to='/react'>React</NavLink></li>
+            <li ><NavLink to='/.net'>.Net</NavLink></li>
+            {/* <li><a class='linkcolor' href="">React</a></li>
+            <li><a class='linkcolor' href="">.Net</a></li> */}
+
+
+            </ul>
+            
+
           </NavLink>
           <NavLink to='/contact-us' >
             Contact Us
@@ -44,6 +59,9 @@ const Navbar = () => {
         </NavMenu>
       </Nav>
       {text}
+
+      <Route path="/services" component={Services} />
+      </Router>
     </>
   );
 };
