@@ -9,7 +9,7 @@ const Services = () => {
     
             <Router>
                 <Link to="/python">Python</Link>
-                <Link to="/java">React</Link>
+                <Link to="/java">Java</Link>
                 <Link to="/.net">.Net</Link>
                 <Route path="/python" component={Python}/>
                 <Route path="/java" component={Java}/>
