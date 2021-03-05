@@ -1,13 +1,27 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import {BrowserRouter as Router} from 'react-router-dom'
+import Python from './components/Navbar';
+import Route from './components/Navbar/Route';
+
+import {BrowserRouter as Router,Link} from 'react-router-dom';
+import Services from './components/Navbar/Services';
+import routes from './components/Navbar/Route';
+// import Python from './Pages/Python';
 function App() {
   return (
-    <Router>
-      <Navbar/>
+    <div>
+      {/* <Navbar/> */}
+      {/* <Route/> */}
+      <Route/>
+    
+      
+    </div>
+  
+    
+      
 
-    </Router>
+  
       
       
   

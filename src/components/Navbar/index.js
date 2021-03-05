@@ -20,7 +20,7 @@ const Navbar = () => {
     }
   return (
     <>
-    <Router>
+  
       <Nav>
         <NavLink to='/'>
           <h1>logo</h1>
@@ -59,9 +59,6 @@ const Navbar = () => {
         </NavMenu>
       </Nav>
       {text}
-
-      <Route path="/services" component={Services} />
-      </Router>
     </>
   );
 };

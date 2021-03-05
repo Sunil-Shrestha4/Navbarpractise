@@ -1,11 +1,9 @@
 import React from 'react'
-import Navbar from '.'
 
 const Python = () => {
     return (
         <div>
-            <Navbar/>
-            <h1>This is Python</h1>
+            <h1>This is python</h1>
         </div>
     )
 }
